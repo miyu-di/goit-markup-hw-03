@@ -294,17 +294,14 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
-    padding-top: 8px;
     padding-right: 16px;
     padding-left: 16px;
-    padding-bottom: 32px;
 }
 
 .services {
-    padding-top: 32px;
     padding-right: 16px;
     padding-left: 16px;
+    margin-bottom: 8px;
 }
 /* PORTFOLIO */
 /* MAIN */
