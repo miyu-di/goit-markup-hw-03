@@ -44,6 +44,7 @@ button {
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .head-page-line {
@@ -77,6 +78,7 @@ button {
 
 .headline {
     color: #2E2F42;
+    padding: 24px 0
 }
 
 .address-list {
@@ -112,6 +114,7 @@ button {
 .hero {
     background-color: #2E2F42;
     height: 600px;
+    padding: 188px 0
 }
 
 .the-beginning {
@@ -121,9 +124,10 @@ button {
     line-height: 1.07;
     font-weight: 700;
     letter-spacing: 1.12px;
-    padding-top: 188px;
-        padding-left: 316px;
-        padding-right: 316px;
+
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .order-button {
@@ -139,6 +143,11 @@ button {
     margin-right: auto;
     margin-top: 48px;
     padding: 16px 32px;
+
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .order-button:hover, .order-button:focus {
@@ -172,7 +181,6 @@ button {
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
-    padding-top: 8px;
 }
 
 .caption {
@@ -188,6 +196,7 @@ button {
 .contentline {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .content-list-item {
@@ -203,10 +212,15 @@ button {
     color: #2E2F42;
 }
 
+.content-headlist {
+    margin-bottom: 8px;
+}
+
 /* TEAM */
 
 .team-section {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-heading {
@@ -217,13 +231,17 @@ button {
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
-    padding-top: 120px;
+    margin-bottom: 72px;
 }
 
 .team-list {
     background-color: #ffffff;
     text-align: center;
-    padding-bottom: 32px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.name-container {
+    padding: 32px 0;
 }
 
 .teamline {
@@ -233,16 +251,25 @@ button {
 }
 
 .team-names {
-    padding-top: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.specialty {
+    text-align: center;
 }
 
 /* TEAM */
 
 /* PORTFOLIO */
 
-.portfolio-header {
+.portfolio-sec {
     padding-top: 120px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
+}
+
+.portfolio-header {
+    margin-bottom: 72px;
 }
 
 .portfolio-page {
@@ -250,11 +277,18 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     grid-row-gap: 48px;
-    padding-bottom: 120px;
+    column-gap: 24px;
 }
 
 .portfolio-list-item {
     background-color: #FFF;
+}
+
+.applications {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .desc {
@@ -281,11 +315,12 @@ button {
 
 .ending {
     background-color: #2E2F42;
+    padding: 100px 0
 }
 
-.footerline {
-    padding-top: 102px;
-    padding-bottom: 100px;
+.logolink {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .quote {
