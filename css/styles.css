@@ -4,7 +4,60 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,li {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /* HEADER */
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.head-page-line {
+    display: flex;
+}
+
+.head-nav {
+    display: flex;
+    align-items: center;
+}
+
+.headlist {
+    display: flex;
+}
 
 .logoword {
     color: #2e2f42;
@@ -12,7 +65,6 @@ body {
 
 .logotype {
     font-family: 'Raleway', sans-serif;
-    text-decoration: none;
     text-transform: uppercase;
     color: #4d5ae5;
     font-size: 18px;
@@ -20,11 +72,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-}
-
-
-.headmain a {
-    text-decoration: none;
+    margin-right: 76px;
 }
 
 .headline {
@@ -33,6 +81,8 @@ body {
 
 .address-list {
     font-style: normal;
+    display: flex;
+    margin-left: auto;
 }
 
 .info {
@@ -51,15 +101,17 @@ body {
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+    gap: 40px;
+    display: flex;
 }
-
-
+/* HEADER */
 
 
 /* SECTION HERO */
 
 .hero {
     background-color: #2E2F42;
+    height: 600px;
 }
 
 .the-beginning {
@@ -69,6 +121,9 @@ body {
     line-height: 1.07;
     font-weight: 700;
     letter-spacing: 1.12px;
+    padding-top: 188px;
+        padding-left: 316px;
+        padding-right: 316px;
 }
 
 .order-button {
@@ -79,17 +134,37 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    padding: 16px 32px;
 }
 
 .order-button:hover, .order-button:focus {
     background-color: #404BBF;
 }
+/* SECTION HERO */
 
 /* MAIN PAGE */
 
-.list {
-    list-style-type: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.content {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .paragraf {
@@ -97,6 +172,7 @@ body {
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+    padding-top: 8px;
 }
 
 .caption {
@@ -109,6 +185,15 @@ body {
     text-align: center;
 }
 
+.contentline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
 .heading {
     font-size: 20px;
     font-weight: 500;
@@ -117,6 +202,8 @@ body {
     letter-spacing: 0.4px;
     color: #2E2F42;
 }
+
+/* TEAM */
 
 .team-section {
     background-color: #F4F4FD;
@@ -130,18 +217,65 @@ body {
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
+    padding-top: 120px;
 }
 
 .team-list {
     background-color: #ffffff;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.teamline {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+.team-names {
+    padding-top: 32px;
+}
+
+/* TEAM */
+
+/* PORTFOLIO */
+
+.portfolio-header {
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.portfolio-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-row-gap: 48px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list-item {
+    background-color: #FFF;
 }
 
 .desc {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
+
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 32px;
 }
+
+.services {
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+/* PORTFOLIO */
+/* MAIN */
+
 
 /* FOOTER */
 
@@ -149,12 +283,20 @@ body {
     background-color: #2E2F42;
 }
 
+.footerline {
+    padding-top: 102px;
+    padding-bottom: 100px;
+}
+
 .quote {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    padding-top: 17.5px;
 }
 
 .logoline {
     color: #f4f4fd;
 }
+/* FOOTER */
