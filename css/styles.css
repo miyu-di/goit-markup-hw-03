@@ -247,7 +247,6 @@ button {
 .teamline {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .team-names {
