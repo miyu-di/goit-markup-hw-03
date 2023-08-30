@@ -293,13 +293,10 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-right: 16px;
-    padding-left: 16px;
 }
 
 .services {
-    padding-right: 16px;
-    padding-left: 16px;
+    margin-bottom: 8px
 }
 /* PORTFOLIO */
 /* MAIN */
@@ -321,6 +318,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-bottom: 16px;
 
     display: inline-block;
 }
@@ -330,7 +328,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    padding-top: 17.5px;
 }
 
 .logoline {
